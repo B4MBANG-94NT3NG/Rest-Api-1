@@ -12,14 +12,46 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/ruang-admin.min.css" rel="stylesheet">
-  <script>
-window[/*'CboxReady'] = function (Cbox) {
-	Cbox('button', '6-852538-vNvLf8');
-}
-</script>
-<script src="" async></script>
-</head>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+  <script type="text/javascript">
 
+    window.setTimeout("waktu()", 1000);
+
+    function waktu() {
+        var waktu = new Date();
+        setTimeout("waktu()", 1000);
+        document.getElementById("jam").innerHTML = waktu.getHours();
+        document.getElementById("menit").innerHTML = waktu.getMinutes();
+        document.getElementById("detik").innerHTML = waktu.getSeconds();
+    }
+
+    </script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+  <script type="text/javascript">
+
+    window.setTimeout("waktu()", 1000);
+
+    function waktu() {
+        var waktu = new Date();
+        setTimeout("waktu()", 1000);
+        document.getElementById("jam").innerHTML = waktu.getHours();
+        document.getElementById("menit").innerHTML = waktu.getMinutes();
+        document.getElementById("detik").innerHTML = waktu.getSeconds();
+    }
+  </script>
+<!--script>alert("API INI GRATIS BUAT LATIHAN");</script--> 
+  <!--salam pembuka njir-->
+  <!--script type="text/javascript">
+            name = prompt("NAMA KAMU SIAPA ? ")
+            if(name != null && name != "")
+            alert("HALLO KAK : "+name+"  SELAMAT DATANG DI WEB HAFIZH REST API");
+            else 
+            alert("YAH NGAK TAU NAMANYA DEH")
+        </script-->
+ </head>
 <body id="page-top" onload="getvisitor();">
   <div id="wrapper">
     <!-- Sidebar -->
@@ -51,7 +83,13 @@ window[/*'CboxReady'] = function (Cbox) {
             <h6 class="collapse-header">Media Features</h6>
             <a class="collapse-item" href="api/fbdown/?url=MASUKIN_URL&apikey=MASUKIN_APIKEY">Facebook Downloader</a>
             <a class="collapse-item" href="api/tiktod/?url=MASUKIN_URL&apikey=MASUKIN_APIKEY">Tiktok Downloader</a>
-            <a class="collapse-item" href="api/tiktod/stalk/?username=MASUKIN_USERNAME&apikey=MASUKIN_APIKEY">Tiktok Stalk</a>
+            <a class="collapse-item" href="api/tiktod/stalk/?username=MASUKIN_USERNAME&apikey=MASUKIN_APIKEY">Tiktok stalk</a>
+            <a class="collapse-item" href="api/igstalk/?username=MASUKIN_USERNAME&apikey=MASUKIN_APIKEY">Igstalk</a>
+            <a class="collapse-item" href="api/igdown/?username=MASUKIN_USERNAME&apikey=MASUKIN_APIKEY">Igdownloader</a>
+            <a class="collapse-item" href="api/yt/search/?q=MASUKIN_Judul&apikey=MASUKIN_APIKEY">Ytsearch</a>
+            <a class="collapse-item" href="api/yt/play/?q=MASUKIN_JUDUL&apikey=MASUKIN_APIKEY">Ytplay</a>
+            <a class="collapse-item" href="api/ytdl/?q=MASUKIN_JUDUL&apikey=MASUKIN_APIKEY">Ytmp4</
+             </a>
             </div>
         </div>
       </li>
@@ -134,8 +172,8 @@ window[/*'CboxReady'] = function (Cbox) {
             <a class="collapse-item" href="api/textmaker/alam?text=OnlyDevBTR&theme=flower&apikey=MASUKIN_APIKEY">Flower</a>
             <a class="collapse-item" href="api/textmaker/random?text=OnlyDevBTR&theme=text-burn&apikey=MASUKIN_APIKEY">Text Burn</a>
             <a class="collapse-item" href="api/textmaker/random?text=OnlyDevBTR&theme=art-quote&apikey=MASUKIN_APIKEY">Art Quote</a>
-            <a class="collapse-item" href="api/textmaker/roses?text=OnlyDevBTR&theme=wooden-boarch&apikey=MASUKIN_APIKEY">Wooden Boarch</a>
-            <a class="collapse-item" href="api/textmaker/roses?text=OnlyDevBTR&theme=golden&apikey=MASUKIN_APIKEY">Golden Roses</a>
+            <a class="collapse-item" href="api/textmaker/yamaker?text=OnlyDevBTR&theme=metal-epek&apikey=MASUKIN_APIKEY">Yamaker</a>
+            <a class="collapse-item" href="api/textmaker/lmo?text=OnlyDevBTR&theme=bintang&apikey=MASUKIN_APIKEY">lmo</a>
           </div>
         </div>
       </li>
@@ -273,7 +311,7 @@ window[/*'CboxReady'] = function (Cbox) {
       </div>
       <li class="nav-item">
           
-            <a class="nav-link collapsed" href="api/about">
+            <a class="nav-link collapsed" href="/about">
             <i class="fas fa-fw fa-info"></i>
                     <span>About Me</span>
             </a>
@@ -300,6 +338,9 @@ window[/*'CboxReady'] = function (Cbox) {
       <hr class="sidebar-divider">
       <div class="version"><b>Made With ♥️ By OnlyDevBTR</b></div>
     </ul>
+        <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
     <!-- Sidebar -->
     <div id="content-wrapper" class="d-flex flex-column">
       <div id="content">
@@ -429,14 +470,13 @@ window[/*'CboxReady'] = function (Cbox) {
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <img class="img-profile rounded-circle" src="img/logo2.png" style="max-width: 60px">
-                <span class="ml-2 d-none d-lg-inline text-white small">Om Ketoprak</span>
+                <span class="ml-2 d-none d-lg-inline text-white small">Maman Ketoprak</span>
               </a>
               </div>
             </li>
           </ul>
         </nav>
         <!-- Topbar -->
-
         <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -446,52 +486,6 @@ window[/*'CboxReady'] = function (Cbox) {
               <li class="breadcrumb-item active" aria-current="page">Beranda</li>
             </ol>
           </div>
-          <marquee bgcolor=”yellow”> jika ada yg eror atau apa silakan hubungi saya via WhatsApp biar di fixs thanks</marquee>          
-<div class="col-xl-3 col-md-6 mb-4">
-<div class="card h-100">
-<div class="card-body">
-<div class="row no-gutters align-items-center">
-<div class="col mr-2">
-<div class="text-xs font-weight-bold text-uppercase mb-1">Visitor</div>
-<div class="h5 mb-0 font-weight-bold text-gray-800">
-<div class="visitor" id="visitor">00</div>
-</div>
-<div class="mt-2 mb-0 text-muted text-xs">
-
-</span>
-<span>This web visitor</span>
-</div>
-</div>
-<div class="col-auto">
-<i class="fas fa-eye fa-2x text-primary"></i>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-          <div class="row mb-3">
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">apikey nya di bawah</div>
-                      <br>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">Chat DiWa aja😜</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"> gunakan dengan bijak</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>           
-    </section>
         <!-- Container Fluid-->
         <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
@@ -500,23 +494,10 @@ window[/*'CboxReady'] = function (Cbox) {
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span id="demo" aria-hidden="true"></span>
             </button>
+           <b><marquee scrolldelay="20" scrollamount="2" style="border:2px solid;" direction="left" behavior="scroll" width="100%"><font color="white" face="Tahoma" size="3"> Selamat Datang Di Website Rest API OnlyDevBTR , Semoga Anda Suka Dengan Semua Fitur Yang Telah Bambang Sediakan Untuk Anda!   </font></marquee></p><p align="center"></b>
             <script>
 
 arrBulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
-
-var txt = "";
-
-txt += "<p><b>Browser CodeName</b>: " + navigator.appCodeName + "</p>";
-
-txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
-
-txt += "<p><b>Cookies Enabled</b>: " + navigator.cookieEnabled + "</p>";
-
-txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
-
-txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
-
-txt += "<p><b>User-Agent</b>: " + navigator.userAgent + "</p>";
 
 var d = new Date();
 
@@ -533,6 +514,26 @@ const bln = d.getMonth();
 const thn = d.getFullYear();
 
 const bulan = arrBulan[bln]
+
+if (menit >= 0 && menit <= 9){
+	menitt = "0" + menit;
+} else if (menit >= 10 && menit <= 59) {
+	menitt = menit;
+}
+
+var txt = "";
+
+txt += "<p><b>Browser CodeName</b>: " + navigator.appCodeName + "</p>";
+
+txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
+
+txt += "<p><b>Cookies Enabled</b>: " + navigator.cookieEnabled + "</p>";
+
+txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
+
+txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
+
+txt += "<p><b>User-Agent</b>: " + navigator.userAgent + "</p>";
 
 document.write(txt)
 
@@ -591,8 +592,73 @@ document.write("Date : "+ jam +":"+ menit +":"+ detik +"~"+ tgl +"-"+ bulan +"-"
 	100% {-webkit-text-stroke-color: #ff0000}
 
 }
-
 </style>
+
+
+<div class="col-xl-3 col-md-6 mb-4">
+  <div class="card h-100">
+  <div class="card-body">
+  <div class="row align-items-center">
+  <div class="col mr-2">
+  <div class="text-xs font-weight-bold text-uppercase mb-1">Info Muslim</div>
+  <div class="h5 mb-0 font-weight-bold text-gray-800">Road To Ramadhan</div>
+  <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 
+  <b id="time">19Hari  4Jam 30Menit 1Detik </b><br></span>
+  <div class="mt-2 mb-0 text-muted text-xs">
+  </div>
+  </div>
+  <div class="col-auto">
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+<div class="col-xl-3 col-md-6 mb-4">
+<div class="card h100">
+<div class="card-body">
+<div class=row align-items-center">
+<div class="col mr-2">
+<div class="text-xs font-weight-bold text-uppercase mb-1">Total API</div>
+<div class="h5 mb-0 font-weight-bold text-gray-800">89</div>
+<div class="mt-2 mb-0 text-muted text-xs">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> Info</span>
+<span>Hapus fitur nsfw</span>
+</div>
+</div>
+<div class="col-auto">
+<i class="fas fa-calendar fa-2x text-primary"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-3 col-md-6 mb-4">
+<div class="card h-100">
+<div class="card-body">
+<div class="row no-gutters align-items-center">
+<div class="col mr-2">
+<div class="text-xs font-weight-bold text-uppercase mb-1">Visitor</div>
+<div class="h5 mb-0 font-weight-bold text-gray-800">
+<div class="visitor" id="visitor">00</div>
+</div>
+<div class="mt-2 mb-0 text-muted text-xs">
+
+</span>
+<span>This web visitor</span>
+</div>
+</div>
+<div class="col-auto">
+<i class="fas fa-eye fa-2x text-primary"></i>
+</div>
+</div>
+</div>
+</div>
+</div>   
+
                <div class="row mb-3">
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-3 col-md-6 mb-4">
@@ -668,31 +734,31 @@ document.write("Date : "+ jam +":"+ menit +":"+ detik +"~"+ tgl +"-"+ bulan +"-"
             </div>
             
           <!--Row-->
+								</p>
           <!--Row-->
 
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <p>Suka Dengan API Nya ? Boleh Dong, Follow Github Gw : <a href="https://github.com/Bambang-Gans"
-                  class="btn btn-primary btn-sm" target="_blank"><i class="fab fa-fw fa-github"></i>&nbsp;GitHub</a></p>
-            </div>
-          </div>
+ <div class="row">
+ <div class="col-lg-12 text-center">
+ <p>Suka Dengan Rest API Gw? Boleh Dong , Follow Instagram Owner : <a href="https://instagram.com/sadboy.edtz"
+ class="btn btn-primary btn-sm" target="_blank"><i class="fab fa-fw fa-instagram"></i>&nbsp;IG Owner</a></p>
+ </div>
+ </div>
+ </div>
 
-        </div>
-        <!---Container Fluid-->
-      </div>
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; 2021 - Developed By
-              <b><a href="https://github.com/Bambang-Gans" target="_blank">OnlyDevBTR</a></b>
-            </span>
-          </div>
-        </div>
-      </footer>
-      <!-- Footer -->
-    </div>
-  </div>
+<!---Container Fluid-->
+<!-- Footer -->
+<footer class="sticky-footer bg-white">
+<div class="container my-auto">
+<div class="copyright text-center my-auto">
+<span>Copyright &copy; 2021 - Developed By
+<b><a href="https://github.com/Bambang-Gans" target="_blank">OnlyDevBTR</a></b>
+</span>
+</div>
+</div>
+</footer>
+<!-- Footer -->
+</div>
+</div>
 
   <!-- Scroll to top -->
   <a class="scroll-to-top rounded" href="#page-top">
@@ -721,8 +787,33 @@ document.write("Date : "+ jam +":"+ menit +":"+ detik +"~"+ tgl +"-"+ bulan +"-"
   }
   
 </script>
+<script>
+// Akhir Hitungan Mundur
+				var countDownDate = new Date("Apr 12, 2021 00:00:00").getTime();
 
+				// Update Hitungan Mundur Setiap 1 Detik
+				var x = setInterval(function() {
 
+					// Mengambil Tanggal Dan Waktu
+					var now = new Date().getTime();
 
-</body>
+					// Find the distance between now and the count down date
+					var distance = countDownDate - now;
+
+					// Kalkulator Waktu Hari, Jam, Menit, Detik 
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Menampilkan Hasil Di Dalam element Menggunakan id="time"
+					document.getElementById("time").innerHTML = days + "Hari  " + hours + "Jam " + minutes + "Menit " + seconds + "Detik ";
+
+					// Ketika countdown timer sudah berakhir Maka Tulisan Berakhir
+					if (distance < 0) {
+						clearInterval(x);
+						document.getElementById("time").innerHTML = "Berakhir";
+					}
+				}, 1000);
+			</script>
 </html>
